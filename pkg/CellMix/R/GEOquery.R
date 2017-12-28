@@ -159,7 +159,7 @@ getGSE <- function(GEO = NULL, filename = NULL, destdir = GEDtmp(), ..., simplif
 {
 	GEO <- toupper(GEO)
 	# require GEOquery
-	uq_requirePackage('GEOquery', load=TRUE, msg=str_c("for downloading datasets from GEO."), ptype='BioCsoft')
+	uq_requirePackage('GEOquery', load=TRUE, msg=str_c("for downloading datasets from GEO."), ptype='BioCSoft')
 	
 	# create a modified GEOquery "namespace"	
 #	GEOns <- new.env(parent=asNamespace('GEOquery'))
