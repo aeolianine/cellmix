@@ -431,7 +431,7 @@ uq_requirePackage <- function(package, lib=NULL, ..., load=TRUE, msg=NULL, quiet
 	## install
 	# check Bioconductor repositories
 	hasRepo <- function(p){ any(grepl(p, getOption('repos'))) } 
-	install_type <- NULL
+	install_type <- ''
 	if( ptype == 'CRAN-like' 
 		|| ( ptype == 'BioC' && hasRepo('/((bioc)|(data/annotation))/?$') )
 		|| ( ptype == 'BioCSoft' && hasRepo('/bioc/?$') )
