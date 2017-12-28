@@ -80,7 +80,7 @@ GEDdownload <- function(x, ..., destdir=GEDtmp(), datasource=NULL, annotation=NU
 	}else if( datasource =='ArrayExpress' ){ # ArrayExpress (even more buggy than GEOquery)
 		
 		# require ArrayExpress
-		uq_requirePackage('ArrayExpress', load=TRUE, msg=str_c("for downloading datasets from ArrayExpress."), ptype='BioCsoft')
+		uq_requirePackage('ArrayExpress', load=TRUE, msg=str_c("for downloading datasets from ArrayExpress."), ptype='BioCSoft')
 				
 		# try local
 		if( lverbose() <= 1 ){ # show warnings if high verbose level
