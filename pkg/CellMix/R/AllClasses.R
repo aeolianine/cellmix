@@ -8,7 +8,6 @@
 NULL
 
 library(Biobase)
-library(digest)
 
 # union class for matrix-like data
 setClassUnion('MatrixData', c('matrix', 'ExpressionSet'))
