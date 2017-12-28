@@ -433,7 +433,7 @@ uq_requirePackage <- function(package, lib=NULL, ..., load=TRUE, msg=NULL, quiet
 	hasRepo <- function(p){ any(grepl(p, getOption('repos'))) } 
 	if( ptype == 'CRAN-like' 
 		|| ( ptype == 'BioC' && hasRepo('/((bioc)|(data/annotation))/?$') )
-		|| ( ptype == 'BioCsoft' && hasRepo('/bioc/?$') )
+		|| ( ptype == 'BioCSoft' && hasRepo('/bioc/?$') )
 		|| ( ptype == 'BioCann' && hasRepo('/data/annotation/?$') )
 		){
 		install_type <- 'CRAN'
