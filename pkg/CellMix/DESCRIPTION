@@ -22,7 +22,7 @@ License: GPL (>=2)
 URL: http://web.cbio.uct.ac.za/~renaud/CRAN/web/CellMix
 BugReports: https://bitbucket.org/renozao/cellmix/issues
 Depends: R (>= 3.0), methods, pkgmaker (>= 0.15.4), NMF (>= 0.14), csSAM (>= 1.2.2), registry, stats, stringr, GSEABase,
-              Biobase
+              Biobase, digest
 Imports: graphics, BiocGenerics, annotate, matrixStats, genefilter, AnnotationDbi, RSQLite, DBI, preprocessCore, limSolve,
               quadprog, corpcor, xtable, gtools, csSAM, beeswarm, graph, BiocInstaller
 Suggests: limSolve, RcppOctave, RUnit, lumi, hgu133a.db, hgu133b.db, hgu133plus2.db, illuminaHumanv2.db, rat2302.db,
