@@ -25,3 +25,31 @@ if( !require(BiocInstaller) ){
 # install (NB: this might ask you to update some of your packages)
 biocLite('CellMix', siteRepos = 'http://web.cbio.uct.ac.za/~renaud/CRAN', type='both')
 ```
+
+## Alternative installation
+
+Circa December 2018 the local repository above (http://web.cbio.uct.ac.za/~renaud/CRAN) was inaccessible, so here is an alternative installation via a r-forge fork. 
+
+
+1. Clone / download zip to your computer:
+```sh
+git clone https://github.com/aeolianine/cellmix.git
+```
+
+2. Go to cellmix/pkg directory:
+```sh
+cd cellmix/pkg/
+```
+
+3. First build and install csSAM (CellMix depends on it)
+```sh
+R CMD build csSAM
+R CMD install csSAM
+```
+
+4. Finally build and install CellMix
+```sh
+R CMD build CellMix
+R CMD install CellMix 
+```
+
