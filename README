@@ -1,3 +1,22 @@
+			How to install CellMix from this repository
+-----------------------------------------------------------------------
+
+1. Clone / download zip to your computer:
+git clone https://github.com/aeolianine/cellmix.git
+
+2. Go to cellmix/pkg directory:
+cd cellmix/pkg/
+
+3. First build and install csSAM (CellMix depends on it)
+R CMD build csSAM
+R CMD INSTALL csSAM
+
+4. Finally build and install CellMix
+R CMD build CellMix
+R CMD install CellMix 
+
+
+
 			R-Forge SVN README
 
 This file explains the repository structure of your project. A more
