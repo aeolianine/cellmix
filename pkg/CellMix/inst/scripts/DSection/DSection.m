@@ -47,6 +47,8 @@ function [MCData,x_LS,lambda_LS] = DSection(Y,p0,W0,W_proposal,Treatment,nBurnIn
 %WRITTEN BY: 
 %Timo Erkkilä, 18.12.2009
 
+pkg load statistics
+
 if( !verbose )
 PAGER('/dev/null', 'local');
 page_screen_output(1, 'local');
@@ -247,7 +249,7 @@ end
 end %[RG] FOR COMPATIBILITY WITH OCTAVE
 
 # overwrite old gamfit to stop optim::nmsmax it from outputing lots of verbose messages!
-old_gamfit = @gamfit;
+# old_gamfit = @gamfit;
 
 # overwrite old gamfit to stop it from outputing messages!
 function res = gamfit(R)
