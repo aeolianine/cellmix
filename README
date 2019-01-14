@@ -9,11 +9,11 @@ cd cellmix/pkg/
 
 3. First build and install csSAM (CellMix depends on it)
 R CMD build csSAM
-R CMD INSTALL csSAM
+R CMD INSTALL csSAM_1.2.4.tar.gz
 
 4. Finally build and install CellMix
 R CMD build CellMix
-R CMD install CellMix 
+R CMD install CellMix_1.5.3.tar.gz
 
 
 
